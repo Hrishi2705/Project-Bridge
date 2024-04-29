@@ -239,7 +239,7 @@ const ProjectBank = () => {
       <h1>Project Bank</h1>
       <TableContainer component={Paper} id="main_table">
         <Table aria-label="collapsible table">
-          <TableHead>
+          <TableHead style={{backgroundColor:"black", borderBottom:"0.2px solid white"}}>
             <TableRow>
               <TableCell width="2%" />
               <TableCell width="20%">Project Name</TableCell>

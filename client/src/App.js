@@ -45,7 +45,7 @@ function StudentPageWrapper({ component: Component }) {
   const { userId } = useParams();
   return (
     <>
-    <StudentSideBar>
+    <StudentSideBar userId={userId} >
       <StudentNav userId={userId} />
       <Component />
     </StudentSideBar>
