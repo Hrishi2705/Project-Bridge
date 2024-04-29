@@ -235,9 +235,10 @@ const ProjectBank = () => {
   };
 
   return (
-    <div>
-      <h1>Project Bank</h1>
-      <TableContainer component={Paper} id="main_table">
+    <div style={{width:"90%", marginLeft:"5%"}}>
+      <h1 style={{marginTop:"2%"}}>Project Bank</h1>
+      <hr></hr>
+      <TableContainer component={Paper} id="main_table" style={{width:"100%", marginLeft:"0%", left: "0px"}}>
         <Table aria-label="collapsible table">
           <TableHead style={{backgroundColor:"black", borderBottom:"0.2px solid white"}}>
             <TableRow>

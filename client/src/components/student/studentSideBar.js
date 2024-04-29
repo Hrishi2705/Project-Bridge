@@ -18,7 +18,14 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
+import LogoutIcon from '@mui/icons-material/Logout';
+import HomeIcon from '@mui/icons-material/Home';
+import Tooltip from '@mui/material/Tooltip';
 import './studentSideBar.css';
+import { useNavigate} from 'react-router-dom';
+
 const drawerWidth = 240;
 
 const openedMixin = (theme) => ({
@@ -86,9 +93,25 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
   }),
 );
 
-export default function StudentSideBar({ children }) {
+
+
+export default function StudentSideBar({ children, userId }) {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
+  const navigate = useNavigate();
+
+  const redirectHome = () => {
+    navigate(`/students/StudentHome/${userId}`);
+  }
+  const redirectProjectBank = () => {
+    navigate(`/students/ProjectBank/${userId}`);
+  }
+  const redirectProfile = () => {
+    navigate(`/students/Profile/${userId}`);
+  }
+  const logout = () => {
+    window.open("http://localhost:8000/logout", "_self");
+  }
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -101,7 +124,7 @@ export default function StudentSideBar({ children }) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open}>
+      {/* <AppBar position="fixed" open={open}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -119,64 +142,66 @@ export default function StudentSideBar({ children }) {
             Mini variant drawer
           </Typography>
         </Toolbar>
-      </AppBar>
-      <Drawer variant="permanent" open={open}>
+      </AppBar> */}
+      <Drawer variant="permanent" open={open} id="side_drawer" >
       <DrawerHeader>
-          <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
-          </IconButton>
+      <IconButton
+          color="inherit"
+          aria-label="open drawer"
+          onClick={handleDrawerOpen}
+          edge="start"
+          sx={{
+            marginRight: 5,
+            display: open ? 'none' : 'inherit', // Hide when drawer is open
+          }}
+        >
+          <MenuIcon />
+        </IconButton>
+
+        <IconButton
+          onClick={handleDrawerClose}
+          sx={{
+            display: open ? 'inherit' : 'none', // Hide when drawer is closed
+          }}
+        >
+          {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
+        </IconButton>
         </DrawerHeader>
 
         <Divider />
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem key={text} disablePadding sx={{ display: 'block' }}>
-              <ListItemButton
-                sx={{
-                  minHeight: 48,
-                  justifyContent: open ? 'initial' : 'center',
-                  px: 2.5,
-                }}
-              >
-                <ListItemIcon
+            {[
+              { text: 'Home', icon: <HomeIcon />, onClick: redirectHome},
+              { text: 'Project Bank', icon: <AccountBalanceIcon />, onClick: redirectProjectBank },
+              { text: 'Profile', icon: <AccountBoxIcon />, onclick: redirectProfile },
+              { text: 'Logout', icon: <LogoutIcon />, onclick: logout }
+            ].map((item, index) => (
+              <ListItem key={item.text} disablePadding sx={{ display: 'block' }}>
+                <Tooltip title={item.text} arrow placement='right'>
+                <ListItemButton
+                  onClick={item.onClick}
                   sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : 'auto',
-                    justifyContent: 'center',
+                    minHeight: 48,
+                    justifyContent: open ? 'initial' : 'center',
+                    px: 2.5,
                   }}
                 >
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
+                  <ListItemIcon
+                    sx={{
+                      minWidth: 0,
+                      mr: open ? 3 : 'auto',
+                      justifyContent: 'center',
+                    }}
+                  >
+                    {item.icon}
+                  </ListItemIcon>
+                  <ListItemText primary={item.text} sx={{ opacity: open ? 1 : 0 }} />
+                </ListItemButton>
+                </Tooltip>
+              </ListItem>
+            ))}
+          </List>
         <Divider />
-        <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem key={text} disablePadding sx={{ display: 'block' }}>
-              <ListItemButton
-                sx={{
-                  minHeight: 48,
-                  justifyContent: open ? 'initial' : 'center',
-                  px: 2.5,
-                }}
-              >
-                <ListItemIcon
-                  sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : 'auto',
-                    justifyContent: 'center',
-                  }}
-                >
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />

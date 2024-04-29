@@ -288,9 +288,10 @@ exports.deleteDraft = async (req, res) => {
     // Find the index of the draft with the specified projectId
     const draftIndex = student.drafts.findIndex(draft => draft.projectId === projectId);
 
-    // If draft is not found, return an error response
+    // If draft is not found, return a success response
     if (draftIndex === -1) {
-      return res.status(404).json({ message: 'Draft not found' });
+      // You can customize the success message as needed
+      return res.status(200).json({ message: 'Draft not found, but deletion operation completed successfully' });
     }
 
     // Remove the draft from the drafts array
@@ -306,8 +307,8 @@ exports.deleteDraft = async (req, res) => {
     console.error('Error deleting draft:', error);
     return res.status(500).json({ message: 'Internal server error' });
   }
-
 };
+
 
 exports.getProjectStatus = async (req, res) => {
   try {
