@@ -357,14 +357,14 @@ exports.getSentRequests = async (req, res) => {
       }
 
       // Extract required details
-      const { project_name, project_type, project_description, project_domain, project_slots, filled_slots, teacherId} = project;
+      const { project_name, project_type, project_slots, filled_slots, teacherId} = project;
       const { status } = request.requests.find(req => req.studentId === studentId);
       // const {  } = request.requests.find(req => req.studentId === studentId);
       const teacher = await teacherdb.findOne({ teacherId });
       if (!teacher) {
         continue;
       }
-      const {name, department} = teacher;
+      const {name, department,block, roomNumber} = teacher;
 
       requestData.push({
         projectId: request.projectId,
@@ -374,6 +374,8 @@ exports.getSentRequests = async (req, res) => {
         department: department,
         project_slots: project_slots,
         filled_slots: filled_slots,
+        block: block,
+        roomNumber: roomNumber,
         status: status,
       });
     }
