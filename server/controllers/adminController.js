@@ -1,7 +1,19 @@
 const teacherdb = require("../model/teacherSchema");
 const projectdb = require("../model/projectSchema");
 const requestsdb = require("../model/requestSchema");
+const userdb = require("../model/userSchema")
+exports.getUserCount =  async (req, res) => {
+  try {
+    
+    const teachersCount = await userdb.countDocuments({ user_type: 'teacher' });
+    const studentsCount = await userdb.countDocuments({ user_type: 'student' });
+    const totalUsers = teachersCount+studentsCount;
 
+    res.json({ totalUsers, teachersCount, studentsCount });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
 // Endpoint to get the number of projects per department
 exports.getProjectsPerDepartment = async (req, res) => {
   try {

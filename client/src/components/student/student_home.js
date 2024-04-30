@@ -29,16 +29,16 @@ const StudentHome = () => {
   }, [userId]);
 
   return (
-    <div style={{width:"90%", marginLeft:"5%"}}>
+    <div style={{width:"90%", marginLeft:"5%", marginTop:"5%"}}>
       <h1>Current Requests</h1>
       <hr></hr>
       <TableContainer id="main_table" style={{width:"100%", marginLeft:"0%", left: "0px"}} component={Paper}>
         <Table sx={{ minWidth: 700 }} aria-label="customized table">
           <TableHead style={{backgroundColor:"black", borderBottom:"0.2px solid white"}}>
             <TableRow>
+              <TableCell>Project Name</TableCell>
               <TableCell>Project Type</TableCell>
               <TableCell>Professor Name</TableCell>
-              <TableCell>Project Name</TableCell>
               <TableCell>Department</TableCell>
               <TableCell>Available Slots</TableCell>
               <TableCell>Status</TableCell>
@@ -64,7 +64,6 @@ const StudentHome = () => {
           </TableBody>
         </Table>
       </TableContainer>
-      <a href={`/students/ProjectBank/${userId}`}> Project Bank </a>
     </div>
   );
 };
