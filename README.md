@@ -46,7 +46,7 @@ To address these challenges, we propose the development of "Project Bridge," an 
 The web application supports three types of users: Professor, Student, and Admin.
 <details>
 <summary>Login Page</summary>
-  
+  <br><br/>
   Google Firebase Authentication is used so that users can directly login via their BITS google accounts. 
 
   ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/cd6aa7d8-8c3f-4795-81bd-0ca5b720e060)
@@ -55,32 +55,39 @@ The web application supports three types of users: Professor, Student, and Admin
 
 <details>
 <summary>Professor Side Functionalities</summary>
-<pre>
+<br><br/>
 1. **Login**: Professors log in using their BITS Google account.
 2. **Home Page**: Professors can create new projects (name, description, number of slots, project type, pre-requisites). They can edit or delete projects, with changes reflected instantly on the webpage.
 
-      ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/e2b9728c-bfda-4083-826e-3e677e54bb26)
-      ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/cea3b38c-2679-409a-9687-d8aba6568e5f)
-
+  ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/dfe3850f-e561-4b8c-aa84-9e98cbc526df)
+  ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/09f1c6e7-660e-4b8e-a630-94d3046f273b)
 
 3. **Requests Page**: Professors can view all student requests for their projects in a tabular format. Information includes CG eligibility, degree, resume, performance sheet, pre-requisites fulfilled, and a short paragraph written by the student. Professors can accept or reject requests and undo decisions if necessary.
-     
+   
+   ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/9fda15fc-db10-4f4d-b165-4e108702b8b1)
 
-5. **Profile Page**: Professors can fill out their basic details, such as name, department, room number, and block/building.  
-</pre>
+4. **Profile Page**: Professors can fill out their basic details, such as name, department, room number, and block/building.
+5. 
+   ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/1fcaece9-cd99-44b0-9c44-0b4a63154862)
+
 </details>
 
 <details>
 <summary>Student Side Functionalities</summary>
-<pre>
+<br><br/>
 1. **Login**: Students log in using their BITS Google account.
 2. **Home Page**: Displays the status of current requests sent by the students (accepted/rejected/pending).
+   
    ![student_home](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/5230fcc5-4010-4aa7-8934-227de0eb7d5e)
+   
 3. **Project Bank**: Lists all projects by every teacher and department. Students can view project details, apply for projects, save drafts, like projects, and filter projects by various criteria. Requests are sent without the need to reload the page.
+   
    ![student_projectbank](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/dfee28b1-262a-442a-ac28-0ff2aa0f7cb2)
+   
 4. **Profile Page**: Students can fill in their basic information (ID number, branch, current CGPA) and upload their resume and performance sheet.
+   
    ![student_profile](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/18cb979d-d133-410d-a989-f3f05b3b6d67)
-</pre>
+
 </details>
 
 
