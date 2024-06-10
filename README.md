@@ -45,11 +45,7 @@ To address these challenges, we propose the development of "Project Bridge," an 
 
 The web application supports three types of users: Professor, Student, and Admin.
 <details>
-<summary>
-  
-  ### Login
-  
-</summary>
+<summary> User Login </summary>
   <br><br/>
   
 - Google Firebase Authentication is used so that users can directly login via their BITS google accounts. 
@@ -57,13 +53,8 @@ The web application supports three types of users: Professor, Student, and Admin
   ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/cd6aa7d8-8c3f-4795-81bd-0ca5b720e060)
 
 </details>
-
 <details>
-<summary>
-  
-  ### Professor Side Functionalities
-  
-</summary>
+<summary>Professor Side Functionalities</summary>
 <br><br/>
   
 1. **Login**: Professors log in using their BITS Google account.
@@ -83,13 +74,8 @@ The web application supports three types of users: Professor, Student, and Admin
    ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/1fcaece9-cd99-44b0-9c44-0b4a63154862)
 
 </details>
-
 <details>
-<summary>
-  
-  ### Student Side Functionalities
-  
-</summary>
+<summary>Student Side Functionalities</summary>
 <br><br/>
   
 1. **Login**: Students log in using their BITS Google account.
@@ -107,10 +93,8 @@ The web application supports three types of users: Professor, Student, and Admin
    ![student_profile](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/18cb979d-d133-410d-a989-f3f05b3b6d67)
 
 </details>
-
-
 <details>
-<summary><h3>Admin Functionalities<h3/></summary>
+<summary>Admin Functionalities</summary>
 <br><br/>
 - Admins can view various statistics related to projects and requests, such as projects per department, average requests per department, project slots with respect to departments, and project type distribution, displayed in graphs (line, bar, pie chart, etc.).
   
