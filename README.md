@@ -45,37 +45,38 @@ To address these challenges, we propose the development of "Project Bridge," an 
 
 The web application supports three types of users: Professor, Student, and Admin.
 <details>
-<summary>Login Page</summary>
+<summary><h3>Login</h3></summary>
   <br><br/>
-  Google Firebase Authentication is used so that users can directly login via their BITS google accounts. 
+- Google Firebase Authentication is used so that users can directly login via their BITS google accounts. 
 
   ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/cd6aa7d8-8c3f-4795-81bd-0ca5b720e060)
 
 </details>
 
 <details>
-<summary>Professor Side Functionalities</summary>
+<summary><h3>Professor Side Functionalities</h3></summary>
 <br><br/>
   
 1. **Login**: Professors log in using their BITS Google account.
   
 2. **Home Page**: Professors can create new projects (name, description, number of slots, project type, pre-requisites). They can edit or delete projects, with changes reflected instantly on the webpage.
 
-  ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/dfe3850f-e561-4b8c-aa84-9e98cbc526df)
-  ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/09f1c6e7-660e-4b8e-a630-94d3046f273b)
+   ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/dfe3850f-e561-4b8c-aa84-9e98cbc526df)
+   
+   ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/09f1c6e7-660e-4b8e-a630-94d3046f273b)
 
-3. **Requests Page**: Professors can view all student requests for their projects in a tabular format. Information includes CG eligibility, degree, resume, performance sheet, pre-requisites fulfilled, and a short paragraph written by the student. Professors can accept or reject requests and undo decisions if necessary.
+4. **Requests Page**: Professors can view all student requests for their projects in a tabular format. Information includes CG eligibility, degree, resume, performance sheet, pre-requisites fulfilled, and a short paragraph written by the student. Professors can accept or reject requests and undo decisions if necessary.
    
    ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/9fda15fc-db10-4f4d-b165-4e108702b8b1)
 
-4. **Profile Page**: Professors can fill out their basic details, such as name, department, room number, and block/building.
+5. **Profile Page**: Professors can fill out their basic details, such as name, department, room number, and block/building.
 
    ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/1fcaece9-cd99-44b0-9c44-0b4a63154862)
 
 </details>
 
 <details>
-<summary>Student Side Functionalities</summary>
+<summary><h3>Student Side Functionalities</h3></summary>
 <br><br/>
   
 1. **Login**: Students log in using their BITS Google account.
@@ -96,12 +97,14 @@ The web application supports three types of users: Professor, Student, and Admin
 
 
 <details>
-<summary>Admin Functionalities</summary>
-<pre>
-Admins can view various statistics related to projects and requests, such as projects per department, average requests per department, project slots with respect to departments, and project type distribution, displayed in graphs (line, bar, pie chart, etc.).
+<summary><h3>Admin Functionalities<h3/></summary>
+<br><br/>
+- Admins can view various statistics related to projects and requests, such as projects per department, average requests per department, project slots with respect to departments, and project type distribution, displayed in graphs (line, bar, pie chart, etc.).
+  
   ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/0d34b5cd-3776-4e06-9336-bd569d8b71ad)
+  
   ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/7d9c8836-ee22-4e3b-bd59-ca8da60e44b7)
-</pre>
+
 </details>
 
 
