@@ -42,7 +42,11 @@ To address these challenges, we propose the development of "Project Bridge," an 
 
 The web application supports three types of users: Professor, Student, and Admin.
 <details>
-<summary> User Login </summary>
+<summary> 
+ 
+### [something like this]
+ 
+</summary>
   <br>
   
 - Google Firebase Authentication is used so that users can directly login via their BITS google accounts. 
