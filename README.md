@@ -44,7 +44,7 @@ The web application supports three types of users: Professor, Student, and Admin
 <details>
 <summary> 
  
-### [something like this]
+<h3>something like this<h3/>
  
 </summary>
   <br>
