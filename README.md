@@ -44,36 +44,49 @@ To address these challenges, we propose the development of "Project Bridge," an 
 ## Web Application Functionalities
 
 The web application supports three types of users: Professor, Student, and Admin.
+<details>
+<summary>Login Page</summary>
+<pre>
+  Google Firebase Authentication is used so that users can directly login via their BITS google accounts. 
 ![loginpage](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/808bdac0-2c33-4096-b98e-5aa55d1ead3c)
+</pre>
+</details>
 
-
-### Professor Side Functionalities
-
+<details>
+<summary>Professor Side Functionalities</summary>
+<pre>
 1. **Login**: Professors log in using their BITS Google account.
 2. **Home Page**: Professors can create new projects (name, description, number of slots, project type, pre-requisites). They can edit or delete projects, with changes reflected instantly on the webpage.
+     ![teacher_home](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/9b16db3c-7f1c-4f75-b375-fe68bd6f6d70)
+     ![teacher_newproject](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/cdad79f0-0478-42a0-bfd2-448ccc703a42)
 3. **Requests Page**: Professors can view all student requests for their projects in a tabular format. Information includes CG eligibility, degree, resume, performance sheet, pre-requisites fulfilled, and a short paragraph written by the student. Professors can accept or reject requests and undo decisions if necessary.
-4. **Profile Page**: Professors can fill out their basic details, such as name, department, room number, and block/building.
-   ![teacher_home](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/9b16db3c-7f1c-4f75-b375-fe68bd6f6d70)
-   ![teacher_newproject](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/cdad79f0-0478-42a0-bfd2-448ccc703a42)
-   ![teacher_requests](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/21a6f803-4856-4444-a421-2aa899eb4438)
+     ![teacher_requests](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/21a6f803-4856-4444-a421-2aa899eb4438)
+4. **Profile Page**: Professors can fill out their basic details, such as name, department, room number, and block/building.  
+</pre>
+</details>
 
-
-### Student Side Functionalities
-
+<details>
+<summary>Student Side Functionalities</summary>
+<pre>
 1. **Login**: Students log in using their BITS Google account.
 2. **Home Page**: Displays the status of current requests sent by the students (accepted/rejected/pending).
-3. **Project Bank**: Lists all projects by every teacher and department. Students can view project details, apply for projects, save drafts, like projects, and filter projects by various criteria. Requests are sent without the need to reload the page.
-4. **Profile Page**: Students can fill in their basic information (ID number, branch, current CGPA) and upload their resume and performance sheet.
    ![student_home](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/5230fcc5-4010-4aa7-8934-227de0eb7d5e)
+3. **Project Bank**: Lists all projects by every teacher and department. Students can view project details, apply for projects, save drafts, like projects, and filter projects by various criteria. Requests are sent without the need to reload the page.
    ![student_projectbank](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/dfee28b1-262a-442a-ac28-0ff2aa0f7cb2)
+4. **Profile Page**: Students can fill in their basic information (ID number, branch, current CGPA) and upload their resume and performance sheet.
    ![student_profile](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/18cb979d-d133-410d-a989-f3f05b3b6d67)
+</pre>
+</details>
 
 
-### Admin Functionalities
-
+<details>
+<summary>Admin Functionalities</summary>
+<pre>
 Admins can view various statistics related to projects and requests, such as projects per department, average requests per department, project slots with respect to departments, and project type distribution, displayed in graphs (line, bar, pie chart, etc.).
   ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/0d34b5cd-3776-4e06-9336-bd569d8b71ad)
   ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/7d9c8836-ee22-4e3b-bd59-ca8da60e44b7)
+</pre>
+</details>
 
 
 ## Installation and Setup
