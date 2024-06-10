@@ -46,8 +46,11 @@ To address these challenges, we propose the development of "Project Bridge," an 
 The web application supports three types of users: Professor, Student, and Admin.
 <details>
 <summary>Login Page</summary>
+  
   Google Firebase Authentication is used so that users can directly login via their BITS google accounts. 
-![loginpage](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/808bdac0-2c33-4096-b98e-5aa55d1ead3c)
+
+  ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/cd6aa7d8-8c3f-4795-81bd-0ca5b720e060)
+
 </details>
 
 <details>
@@ -55,11 +58,15 @@ The web application supports three types of users: Professor, Student, and Admin
 <pre>
 1. **Login**: Professors log in using their BITS Google account.
 2. **Home Page**: Professors can create new projects (name, description, number of slots, project type, pre-requisites). They can edit or delete projects, with changes reflected instantly on the webpage.
-     ![teacher_home](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/9b16db3c-7f1c-4f75-b375-fe68bd6f6d70)
-     ![teacher_newproject](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/cdad79f0-0478-42a0-bfd2-448ccc703a42)
+
+      ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/e2b9728c-bfda-4083-826e-3e677e54bb26)
+      ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/cea3b38c-2679-409a-9687-d8aba6568e5f)
+
+
 3. **Requests Page**: Professors can view all student requests for their projects in a tabular format. Information includes CG eligibility, degree, resume, performance sheet, pre-requisites fulfilled, and a short paragraph written by the student. Professors can accept or reject requests and undo decisions if necessary.
-     ![teacher_requests](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/21a6f803-4856-4444-a421-2aa899eb4438)
-4. **Profile Page**: Professors can fill out their basic details, such as name, department, room number, and block/building.  
+     
+
+5. **Profile Page**: Professors can fill out their basic details, such as name, department, room number, and block/building.  
 </pre>
 </details>
 
