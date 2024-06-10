@@ -8,6 +8,11 @@ Project Bridge is a web application built using MERN stack, designed to automate
 - [Solution Overview](#solution-overview)
 - [Tech Stack](#tech-stack)
 - [Web Application Functionalities](#web-application-functionalities)
+  - [User Login](#user-login)
+  - [Professor Side Functionalities](#professor-side-functionalities)
+  - [Student Side Functionalities](#student-side-functionalities)
+  - [Admin Functionalities](#admin-functionalities)
+- [Installation and Setup](#installation-and-setup)
 - [Installation and Setup](#installation-and-setup)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -42,7 +47,7 @@ To address these challenges, we propose the development of "Project Bridge," an 
 
 The web application supports three types of users: Professor, Student, and Admin.
 <details>
-<summary><b>User Login</b></summary>
+<summary><b><a name="user-login"></a>User Login</b></summary>
   <br>
   
 - Google Firebase Authentication is used so that users can directly login via their BITS google accounts. 
@@ -51,7 +56,7 @@ The web application supports three types of users: Professor, Student, and Admin
 
 </details>
 <details>
-<summary>Professor Side Functionalities</summary>
+<summary><b><a name="professor-side-functionalities"></a>Professor Side Functionalities</b></summary>
 <br>
   
 1. **Login**: Professors log in using their BITS Google account.
@@ -72,7 +77,7 @@ The web application supports three types of users: Professor, Student, and Admin
 
 </details>
 <details>
-<summary>Student Side Functionalities</summary>
+<summary><b><a name="student-side-functionalities"></a>Student Side Functionalities</b></summary>
 <br>
   
 1. **Login**: Students log in using their BITS Google account.
@@ -91,7 +96,7 @@ The web application supports three types of users: Professor, Student, and Admin
 
 </details>
 <details>
-<summary>Admin Functionalities</summary>
+<summary><b><a name="admin-functionalities"></a>Admin Functionalities</b></summary>
 <br>
  
 - Admins can view various statistics related to projects and requests, such as projects per department, average requests per department, project slots with respect to departments, and project type distribution, displayed in graphs (line, bar, pie chart, etc.).
