@@ -56,7 +56,9 @@ The web application supports three types of users: Professor, Student, and Admin
 <details>
 <summary>Professor Side Functionalities</summary>
 <br><br/>
+  
 1. **Login**: Professors log in using their BITS Google account.
+  
 2. **Home Page**: Professors can create new projects (name, description, number of slots, project type, pre-requisites). They can edit or delete projects, with changes reflected instantly on the webpage.
 
   ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/dfe3850f-e561-4b8c-aa84-9e98cbc526df)
@@ -67,7 +69,7 @@ The web application supports three types of users: Professor, Student, and Admin
    ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/9fda15fc-db10-4f4d-b165-4e108702b8b1)
 
 4. **Profile Page**: Professors can fill out their basic details, such as name, department, room number, and block/building.
-5. 
+
    ![image](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/1fcaece9-cd99-44b0-9c44-0b4a63154862)
 
 </details>
@@ -75,7 +77,9 @@ The web application supports three types of users: Professor, Student, and Admin
 <details>
 <summary>Student Side Functionalities</summary>
 <br><br/>
+  
 1. **Login**: Students log in using their BITS Google account.
+   
 2. **Home Page**: Displays the status of current requests sent by the students (accepted/rejected/pending).
    
    ![student_home](https://github.com/Hrishi2705/Project-Bridge/assets/134578117/5230fcc5-4010-4aa7-8934-227de0eb7d5e)
